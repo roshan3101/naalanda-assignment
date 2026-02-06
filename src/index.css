@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-bg: #f3f3f3;
+  --header-bg: #000000;
+  --sidebar-bg: #89c403;
+  --description-bg: #d65d7a;
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  overflow: hidden; /* Prevent body scroll, handle inside components if needed */
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  background: var(--primary-bg);
+}
+
+.visu-header {
+  height: 48px;
+  background-color: var(--header-bg);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.visu-sidebar {
+  width: 200px;
+  background-color: var(--sidebar-bg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.visu-bottom-bar {
+  height: 40px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 20;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  text-align: left;
+  padding: 8px 20px;
+  font-size: 13px;
+}
+
+button:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tree-canvas-container {
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent !important;
+  border: none !important;
+}
