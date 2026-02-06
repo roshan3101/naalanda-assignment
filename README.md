@@ -1,5 +1,7 @@
 # Binary Search Tree (BST) Visualizer
 
+**Live Demo: [https://naalanda-assignment.vercel.app/](https://naalanda-assignment.vercel.app/)**
+
 A professional, interactive, and educational tool designed to visualize Binary Search Tree operations with smooth animations, step-by-step algorithmic guidance, and an intuitive user interface inspired by VisuAlgo.
 
 ![BST Visualizer Preview](https://github.com/roshan3101/naalanda-assignment/raw/main/public/preview.png) *(Note: Add a real preview image link here if available)*
